@@ -1,0 +1,18 @@
+Alice
+52
+New York
+Daniel
+31
+Guadalajara
+David
+44
+Paris
+Erica
+32
+Berlin
+Berenice
+30
+Guadalajara
+Brian
+25
+Chicago
