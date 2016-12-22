@@ -20,10 +20,10 @@ public class CreatingSpliterator {
 			Stream<String> lines = Files.lines(path);
 			
 			Spliterator<String> lineSpliterator  = lines.spliterator();
-//			Spliterator<Person> personSpliterator = null;
-//			
-//			Stream<Person> people = StreamSupport.stream(personSpliterator, false);
-//			people.forEach(System.out::println);
+			Spliterator<Person> personSpliterator = new PersonSpliterator(lineSpliterator);
+			
+			Stream<Person> people = StreamSupport.stream(personSpliterator, false);
+			people.forEach(System.out::println);
 		
 		} catch (IOException e) {
 			e.printStackTrace();
